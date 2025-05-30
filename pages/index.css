@@ -1,3 +1,29 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/normalize__xtra.css);
 @import url(../vendor/fonts.css);
+
+.img-sprite {
+  image-rendering: pixelated;
+  width: 280px;
+  transition: 0.17s ease-in;
+  cursor: pointer;
+}
+
+.img-sprite:hover {
+  transform: scale(1.1);
+}
+
+.img-wrap {
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.list-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}

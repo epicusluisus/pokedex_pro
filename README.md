@@ -10,3 +10,6 @@ at https://www.youtube.com/watch?v=56VjdqcdakQ&t=653s&ab_channel=HowtoBecomeaDev
 Crea una pokdedex con HTML, CSS, JavaScript
 by FreeCodeCamp Español
 https://www.youtube.com/watch?v=drXkf_rytRs
+
+cards inpired by Natalio R
+https://codepen.io/Natalio-R/pen/PoqaeoG

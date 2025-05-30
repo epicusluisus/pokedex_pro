@@ -1,4 +1,4 @@
-const MAX_POKEMON = 151;
+const MAX_POKEMON = 386;
 const listWrapper = document.querySelector(".list-wrapper");
 const searchInput = document.querySelector("#search-input");
 const numberFilter = document.querySelector("#number");
@@ -42,7 +42,7 @@ function displayPokemons(pokemon) {
             <p class="caption-fonts">#${pokemonID}</p>
         </div>
         <div class="img-wrap">
-            <img src="https://raw.githubusercontent.com/pokeapi/sprites/master/sprites/pokemon/other/dream-world/${pokemonID}.svg" alt="${pokemon.name}" />
+            <img src="https://raw.githubusercontent.com/pokeapi/sprites/master/sprites/pokemon/${pokemonID}.png" alt="${pokemon.name}" class="img-sprite" />
         </div>
         <div class="name-wrap">
             <p class="body3-fonts">#${pokemon.name}</p>
@@ -52,7 +52,7 @@ function displayPokemons(pokemon) {
     listItem.addEventListener("click", async () => {
       const success = await fetchPokemonDataBeforeRedirect(pokemonID);
       if (success) {
-        window.location.href = `./detail.html?id=${pokemonID}`;
+        window.location.href = `./pokemon-stats.html?id=${pokemonID}`;
       }
     });
 
