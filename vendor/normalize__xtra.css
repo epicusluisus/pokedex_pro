@@ -1,0 +1,16 @@
+html {
+  background-color: rgb(228, 61, 61);
+}
+
+html,
+body,
+body div,
+span,
+h1,
+h2,
+h3,
+p,
+img {
+  margin: 0;
+  padding: 0;
+}
