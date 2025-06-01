@@ -20,6 +20,7 @@
   height: 80vh;
   padding: 10px;
   max-width: 100%;
+  overflow-x: clip;
 }
 
 .pokemon-list::-webkit-scrollbar {
@@ -52,7 +53,7 @@
 /*
 */
 .list-item {
-  min-width: 180px;
+  min-width: 200px;
   border: 1px solid #ddd;
   aspect-ratio: 5/6;
   display: grid;
@@ -109,4 +110,14 @@
 .list-item:hover .body3-fonts {
   transform: translateY(4px);
   transition: 0.16s ease-in;
+}
+
+@media screen and (max-width: 550px) {
+  .list-item {
+    min-width: 120px;
+  }
+
+  .body3-fonts {
+    font-size: 16px;
+  }
 }

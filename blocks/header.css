@@ -3,6 +3,7 @@
   width: 100%;
   align-items: center;
   gap: 40px;
+  padding-bottom: 12px;
 }
 
 .header__logo-wrapper {
@@ -42,4 +43,10 @@
 
 .header__search-close-icon {
   grid-column: 3;
+}
+
+@media screen and (max-width: 550px) {
+  .header__logo {
+    height: 24px;
+  }
 }
