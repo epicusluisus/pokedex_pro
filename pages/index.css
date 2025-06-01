@@ -2,28 +2,102 @@
 @import url(../vendor/normalize__xtra.css);
 @import url(../vendor/fonts.css);
 
-.img-sprite {
-  image-rendering: pixelated;
-  width: 280px;
-  transition: 0.17s ease-in;
-  cursor: pointer;
-}
-
-.img-sprite:hover {
-  transform: scale(1.1);
-}
-
-.img-wrap {
-}
-
-.logo-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
+@import url(../blocks/page.css);
+@import url(../blocks/header.css);
 
 .list-wrapper {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
+  gap: 10px;
+}
+
+.pokemon-list {
+  background-color: white;
+  box-shadow: var(--drop-shadow-inner);
+  border-radius: 0.75rem;
+  overflow-y: auto;
+  height: 80vh;
+  padding: 10px;
+  max-width: 100%;
+}
+
+.pokemon-list::-webkit-scrollbar {
+  display: none;
+}
+
+/* ----
+.list-item {
+  max-width: 240px;
+  min-width: 160px;
+  flex-grow: 1;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.img-sprite {
+  image-rendering: pixelated;
+  width: 100%;
+  transition: 0.17s ease-in;
+  cursor: pointer;
+}
+
+.name-wrap {
+  border-radius: 7px;
+  background-color: #aaa;
+  padding: 24px 8px 4px 8px;
+  color: var(--grayscale-dark);
+  margin-top: -18px;
+}
+/*
+*/
+.list-item {
+  width: 200px;
+  border: 1px solid #ddd;
+  aspect-ratio: 5/6;
+  display: grid;
+  position: relative;
+  transition: 0.12s ease-in;
+}
+
+.list-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px 3px #ddd;
+}
+
+.img-sprite {
+  image-rendering: pixelated;
+  width: 100%;
+  z-index: 1000;
+  position: absolute;
+  transition: 0.22s ease-in;
+}
+
+.list-item:hover .img-sprite {
+  transform: scale(1.22) translateY(-16px);
+}
+
+.number-wrap {
+  position: absolute;
+}
+
+.name-wrap {
+  position: absolute;
+  bottom: 0;
+  height: 40%;
+  width: 100%;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.body3-fonts {
+  position: absolute;
+  bottom: 40%;
+}
+
+.list-item:hover .body3-fonts {
+  transform: translateY(-6px);
+  transition: 0.26s ease-in;
 }
