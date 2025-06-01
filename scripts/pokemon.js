@@ -45,7 +45,7 @@ function displayPokemons(pokemon) {
             <img src="https://raw.githubusercontent.com/pokeapi/sprites/master/sprites/pokemon/${pokemonID}.png" alt="${pokemon.name}" class="img-sprite" />
         </div>
         <div class="name-wrap">
-            <p class="body3-fonts">#${pokemon.name}</p>
+            <p class="body3-fonts">${pokemon.name}</p>
         </div>
     `;
 

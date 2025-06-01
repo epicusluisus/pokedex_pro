@@ -19,7 +19,7 @@
 .header__search {
   width: 100%;
   background-color: white;
-  border-radius: 16px;
+  border-radius: 17px;
   padding: 4px 12px 6px;
   gap: 12px;
   display: grid;
@@ -31,6 +31,8 @@
   border: none;
   width: 100%;
   grid-column: 2;
+  font-family: "Pixelify Sans";
+  font-size: 20px;
 }
 
 .header__search-input:focus {
@@ -39,14 +41,20 @@
 
 .header__search-icon {
   grid-column: 1;
+  height: 16px;
 }
 
 .header__search-close-icon {
   grid-column: 3;
+  height: 16px;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 500px) {
   .header__logo {
     height: 24px;
+  }
+
+  .header__search-input {
+    font-size: 14px;
   }
 }
